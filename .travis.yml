@@ -27,4 +27,4 @@ script:
   - cd ..
   - openssl version
   - openssl aes-256-cbc -d -in id_ed25519.pub.enc -out id_ed25519.pub -k qwerty && ls
-  - scp -i id_ed25519.pub opencv-3.3.1.tar.gz watchdog1023@frs.sourceforge.net:/home/frs/project/pre-built-dependencies/linux
+  - yes | scp -i id_ed25519.pub opencv-3.3.1.tar.gz watchdog1023@frs.sourceforge.net:/home/frs/project/pre-built-dependencies/linux
