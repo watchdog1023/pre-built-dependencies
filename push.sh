@@ -13,7 +13,7 @@ commit_website_files() {
 
 upload_files() {
   git remote add travis https://${GH_TOKEN}@github.com/watchdog1023/pre-built-dependencies.git > /dev/null 2>&1
-  git push --quiet--set-upstream origin travis
+  git push --quiet --set-upstream origin travis
 }
 
 setup_git
